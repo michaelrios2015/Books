@@ -56,7 +56,7 @@
             <!-- Breed field -->
             <EditText
                 android:id="@+id/edit_phone_number"
-                android:hint="phone number"
+                android:hint="@string/hint_phone"
                 android:inputType="number"
                 style="@style/EditorFieldStyle" />
         </LinearLayout>
@@ -71,7 +71,7 @@
 
         <!-- Label -->
         <TextView
-            android:text="@string/category_quantity"
+            android:text="@string/category_price"
             style="@style/CategoryStyle" />
 
         <!-- Input fields -->
@@ -84,9 +84,15 @@
             <!-- Weight field -->
             <EditText
                 android:id="@+id/edit_product_price"
-                android:hint="@string/hint_quantity"
+                android:hint="@string/hint_price"
                 android:inputType="number"
                 style="@style/EditorFieldStyle" />
+
+            <!-- Units for weight (kg) -->
+            <TextView
+                android:id="@+id/label_weight_units"
+                android:text="@string/unit_price"
+                style="@style/EditorUnitsStyle"/>
 
 
         </RelativeLayout>
@@ -121,11 +127,7 @@
                 android:inputType="number"
                 style="@style/EditorFieldStyle" />
 
-            <!-- Units for weight (kg) -->
-            <TextView
-                android:id="@+id/label_weight_units"
-                android:text="@string/unit_pet_weight"
-                style="@style/EditorUnitsStyle"/>
+
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
